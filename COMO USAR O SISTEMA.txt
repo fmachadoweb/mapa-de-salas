@@ -1,0 +1,36 @@
+IMPORTANTE:
+
+1. Para utilizar esse sistema é necessário que coloque ele em uma hospedagem compatível com PHP e SQL/Mysql ou estar rodando localmente um servidor web tipo Wamp/Xamp, pois ele usa o banco de dados SQLite.
+
+2. Passo necessário para utilizar o sistema:
+- Você deve executar no navegador as seguintes páginas abaixo:
+
+
+3. exemplo de acesso:
+www.seudominio.com.br/(pasta do app)/
+localhost/(pasta do app)/
+
+criar_tabela_manha.php
+criar_tabela_noite.php
+criar_tabela_tarde.php
+
+Após executar as 3 páginas acima elas vão criar o banco de dados necessário para que cada turno funcione.
+
+4. Para atualizar os dados, você deve entrar na página "atualizar.php" utilizando o exemplo do passo (3) vai pedir login e senha, abra o arquivo "atualizar.php" com um editor, exemplo notepad++, sublimetext, visualstudiocode, logo acima na página tem os usuarios padrões do sistema, é mais ou menos assim:
+
+// Credenciais de login (agora com três usuários)
+$usuarios = [
+    "usuario1" => "senha1",
+    "usuario2" => "senha2",
+    "usuario3" => "senha3"
+];
+
+mude ele da forma que achar necessário.
+
+5. Após fazer o login você terá acesso a página de edição do mapa de salas, clique no botão "Clique aqui para atualizar" selecione o turno seja, manha, tarde ou noite e vai abrir a tabela sincronizada com o seu banco e dados para edição, abaixo tem 2 botões, um para Atualizar Dados e outro Limpar tabela, o Limpar tabela serve para deixar a tabela toda limpa.
+
+
+
+SISTEMA DE MAPA DE SALAS DE AULA
+DESENVOLVIDO POR FERNANDO MACHADO
+https://github.com/fmachadoweb
